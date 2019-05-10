@@ -36,8 +36,8 @@ class DeleteProduct(graphene.Mutation):
         
     product = graphene.Field(Product)
 
-    def mutate(self, info, name, code):
-        product = ProductModel.objects(name=name, code=code).first()
+    def mutate(self, info, code):
+        product = ProductModel.objects(code=code).first()
         if product is not None:
             product.delete()
         return DeleteProduct(product=product)
