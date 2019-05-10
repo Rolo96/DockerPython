@@ -32,7 +32,6 @@ class CreateProduct(graphene.Mutation):
 
 class DeleteProduct(graphene.Mutation):
     class Arguments:
-        name = graphene.String(required=True)
         code = graphene.Int(required=True)
         
     product = graphene.Field(Product)
