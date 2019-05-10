@@ -7,11 +7,12 @@ Students: Raul Arias, Rony Paniagua
 Script docker swarm
 
 ## Products model
-
->name: string
->code: int
->cost: int
->amount: int
+```
+name: string
+code: int
+cost: int
+amount: int
+```
 
 ## API usage
 
